@@ -2,6 +2,16 @@ main {
   min-height: 80vh;
 }
 
+h1 {
+  font-size: 1.8 rem;
+  padding: 1 rem 0;
+}
+
+h2 {
+  font-size: 1.2 rem;
+  padding: 0.5 rem 0;
+}
+
 h3 {
   padding: 1rem 0;
 }
