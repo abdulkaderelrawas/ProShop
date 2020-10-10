@@ -20,23 +20,23 @@ const productSchema = mongoose.Schema(
     },
     name: {
       type: String,
-      requried: true,
+      required: true,
     },
     image: {
       type: String,
-      requried: true,
+      required: true,
     },
     brand: {
       type: String,
-      requried: true,
+      required: true,
     },
     category: {
       type: String,
-      requried: true,
+      required: true,
     },
     description: {
       type: String,
-      requried: true,
+      required: true,
     },
     reviews: [reviewSchema],
     rating: {

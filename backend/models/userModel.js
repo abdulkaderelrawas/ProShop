@@ -5,20 +5,20 @@ const userSchema = mongoose.Schema(
   {
     name: {
       type: String,
-      requried: true,
+      required: true,
     },
     email: {
       type: String,
-      requried: true,
+      required: true,
       unique: true,
     },
     password: {
       type: String,
-      requried: true,
+      required: true,
     },
     isAdmin: {
       type: Boolean,
-      requried: true,
+      required: true,
       default: false,
     },
   },
@@ -36,7 +36,6 @@ userSchema.pre('save', async function (next) {
     next();
   }
   const salt = await bcrypt.genSalt(10);
-  console.log(salt);
   this.password = await bcrypt.hash(this.password, salt);
 });
 
