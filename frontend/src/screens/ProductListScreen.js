@@ -4,6 +4,7 @@ import { Table, Button, Row, Col } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
+import Meta from '../components/Meta';
 import Paginate from '../components/Paginate';
 import {
   listProducts,
@@ -72,6 +73,7 @@ const ProductListScreen = ({ history, match }) => {
 
   return (
     <>
+      <Meta title='Admin | Products List' />
       <Row className='align-items-center'>
         <Col>
           <h1>Products</h1>

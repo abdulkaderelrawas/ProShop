@@ -5,6 +5,7 @@ import { Form, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
+import Meta from '../components/Meta';
 import FormContainer from '../components/FormContainer';
 import { listProductDetails, updateProduct } from '../actions/productActions';
 import { PRODUCT_UPDATE_RESET } from '../constants/productConstants';
@@ -110,6 +111,7 @@ const ProductEditScreen = ({ match, history }) => {
           <Message variant='danger'>{error}</Message>
         ) : (
           <Form onSubmit={submitHandler}>
+            <Meta title={name} />
             <Form.Group controlId='name'>
               <Form.Label>Name</Form.Label>
               <Form.Control

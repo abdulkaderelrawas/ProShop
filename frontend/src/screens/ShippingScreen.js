@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import FormContainer from '../components/FormContainer';
+import Meta from '../components/Meta';
 import CheckoutSteps from '../components/CheckoutSteps';
 import { saveShippingAddress } from '../actions/cartActions';
 
@@ -24,6 +25,7 @@ const ShippingScreen = ({ history }) => {
 
   return (
     <FormContainer>
+      <Meta title='Shipping' />
       <CheckoutSteps step1 step2 />
       <h1>Shipping</h1>
       <Form onSubmit={submitHandler}>
