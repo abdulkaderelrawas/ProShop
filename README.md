@@ -1,0 +1,5 @@
+# ProShop
+
+PORT=
+JWT_SECRET=
+MONGO_URI=
